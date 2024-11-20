@@ -1,0 +1,78 @@
+# utils/visualization.py
+
+import matplotlib.pyplot as plt
+import os
+
+def plot_loss(train_losses, test_losses, num_epochs, save_dir):
+    plt.figure(figsize=(8, 5))
+    plt.plot(range(1, num_epochs+1), train_losses, label='Train Loss')
+    plt.plot(range(1, num_epochs+1), test_losses, label='Test Loss', color='red')
+    plt.xlabel('Epoch', fontsize=16, fontweight='bold')
+    plt.ylabel('Loss', fontsize=16, fontweight='bold')
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.title('Training and Test Loss over Epochs')
+    plt.legend(fontsize=14)
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'loss_curve.png'))
+    plt.close()
+
+def plot_r2(train_r2s, test_r2s, num_epochs, save_dir):
+    plt.figure(figsize=(8, 5))
+    plt.plot(range(1, num_epochs+1), train_r2s, label='Train R²')
+    plt.plot(range(1, num_epochs+1), test_r2s, label='Test R²', color='red')
+    plt.xlabel('Epoch', fontsize=16, fontweight='bold')
+    plt.ylabel('R²', fontsize=16, fontweight='bold')
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.title('Training and Test R² over Epochs')
+    plt.legend(fontsize=14)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'r2_curve.png'))
+    plt.close()
+
+def plot_rmse(train_rmses, test_rmses, num_epochs, save_dir):
+    plt.figure(figsize=(8, 5))
+    plt.plot(range(1, num_epochs+1), train_rmses, label='Train RMSE')
+    plt.plot(range(1, num_epochs+1), test_rmses, label='Test RMSE', color='red')
+    plt.xlabel('Epoch', fontsize=16, fontweight='bold')
+    plt.ylabel('RMSE', fontsize=16, fontweight='bold')
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.title('Training and Test RMSE over Epochs')
+    plt.legend(fontsize=14)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'rmse_curve.png'))
+    plt.close()
+
+def plot_mape(train_mapes, test_mapes, num_epochs, save_dir):
+    plt.figure(figsize=(8, 5))
+    plt.plot(range(1, num_epochs+1), train_mapes, label='Train MAPE')
+    plt.plot(range(1, num_epochs+1), test_mapes, label='Test MAPE', color='red')
+    plt.xlabel('Epoch', fontsize=16, fontweight='bold')
+    plt.ylabel('MAPE (%)', fontsize=16, fontweight='bold')
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.title('Training and Test MAPE over Epochs')
+    plt.legend(fontsize=14)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'mape_curve.png'))
+    plt.close()
+
+def plot_measured_vs_predicted(train_targets, train_outputs, test_targets, test_outputs, save_dir):
+    plt.figure(figsize=(6, 6))
+    plt.scatter(train_targets, train_outputs, alpha=0.7, label='Training data', color='blue')
+    plt.scatter(test_targets, test_outputs, alpha=0.7, label='Testing data', color='red')
+    min_val = min(train_targets.min(), test_targets.min())
+    max_val = max(train_targets.max(), test_targets.max())
+    plt.plot([min_val, max_val], [min_val, max_val], 'k--', label='Ideal')
+    plt.xlabel('Measured Ductility', fontsize=16, fontweight='bold')
+    plt.ylabel('Predicted Ductility', fontsize=16, fontweight='bold')
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.title('Measured vs. Predicted Ductility (Train & Test Sets)')
+    plt.legend(fontsize=14)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'measured_vs_predicted_combined.png'))
+    plt.close()
