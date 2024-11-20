@@ -1,0 +1,34 @@
+# configs/config.yaml
+
+# Data Configuration
+data:
+  train_csv: 'train.csv'
+  test_csv: 'test.csv'
+  train_dir: 'data/Training_images'
+  test_dir: 'data/Testing_images'
+  image_size: [224, 224]
+  batch_size: 16
+
+# Model Configuration
+model:
+  type: 'AsphaltNetDualBranch'
+  num_classes: 1
+  feature_dim_cnn: 1536
+  feature_dim_transformer: 1536
+  common_dim: 768
+  pretrained: True
+
+# Training Configuration
+training:
+  epochs: 100
+  learning_rate: 1e-5
+  optimizer: 'AdamW'
+  scheduler: 'ReduceLROnPlateau'
+  save_dir: 'models'
+  save_path: 'asphaltnet_model_dual_branch'
+  seed: 42
+
+# Logging Configuration
+logging:
+  level: 'INFO'
+  log_file: 'training.log'
