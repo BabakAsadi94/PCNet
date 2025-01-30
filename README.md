@@ -61,9 +61,9 @@ python scripts/inference.py \
 ```
 
 
-### 7️⃣ **Cite This Work**
+### 5️⃣ **Cite This Work**
 
-If you use this model for research, please cite:
+If you use the models or code, please cite the following paper:
 
 ```bibtex
 @article{asadi2025hybrid,
