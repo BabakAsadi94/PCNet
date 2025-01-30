@@ -61,3 +61,14 @@ python scripts/inference.py \
 ```
 
 
+### 7️⃣ **Cite This Work**
+
+If you use this model for research, please cite:
+
+```bibtex
+@article{asadi2025hybrid,
+  title={Hybrid CNN-Transformer Model for Predicting Failure Properties of Asphalt Binder},
+  author={Asadi, Babak and Shah, Viraj and Vyas, Abhilash and Golparvar-Fard, Mani and Hajj, Ramez},
+  journal={Computer-Aided Civil and Infrastructure Engineering},
+  year={2025}
+}
