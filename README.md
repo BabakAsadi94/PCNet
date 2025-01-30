@@ -27,7 +27,7 @@ Each sample requires two images:
 - **Bottom surface**: `<sample_name>-B.png` 
 - **Top surface**: `<sample_name>-T.png` 
 
-💡 Training images can be generated using `preprocess.py` to provide standardized images as model input.
+💡 Training images can be generated using [`preprocess.py`](https://github.com/BabakAsadi94/PCNet/utils/preprocess.py) to provide standardized images as model input.
 
 📂 **Example file structure:**
 
