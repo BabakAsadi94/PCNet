@@ -41,7 +41,7 @@ Testing_images/
 
 
 
-### 3️⃣ ** Run Inference for Ductility**
+### 3️⃣ **Run Inference for Ductility**
 
 Run the following command to predict **Ductility**:
 ```bash
