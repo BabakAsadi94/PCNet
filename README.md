@@ -15,7 +15,7 @@ First, install the required dependencies:
 
 ```bash
 pip install torch torchvision timm pandas pillow pyyaml
-
+```
 
 
 ### 2️⃣ **Prepare Input Data**
