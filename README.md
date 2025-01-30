@@ -5,7 +5,7 @@ This repository provides a **Hybrid CNN-Transformer Model** to predict the **Str
 
 ## 🔍 Inference: Predicting Strength and Ductility
 
-The models for inference are available under the **Releases** section:
+The model checkpoints for inference are available under the **Releases**  section.
 - [PCNet_Strength.pth](https://github.com/BabakAsadi94/PCNet/releases/download/v1.1/PCNet_Strength.pth) – Predicts **Strength**
 - [PCNet_Ductility.pth](https://github.com/BabakAsadi94/PCNet/releases/download/v1.0/PCNet_Ductility.pth) – Predicts **Ductility**
 
