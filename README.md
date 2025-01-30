@@ -39,3 +39,14 @@ Testing_images/
 ├── M2-T.png
 ```
 
+
+
+### 3️⃣ ** Run Inference for Ductility**
+
+Run the following command to predict **Ductility**:
+```bash
+python scripts/inference.py \
+  --model_path PCNet_Ductility.pth \
+  --image_bottom Testing_images/M1-B.png \
+  --image_top Testing_images/M1-T.png
+```
