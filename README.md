@@ -13,14 +13,14 @@ The models for inference are available under the **Releases** section:
 - [PCNet_Strength.pth](https://github.com/BabakAsadi94/PCNet/releases/download/v1.1/PCNet_Strength.pth) – Predicts **Strength**
 - [PCNet_Ductility.pth](https://github.com/BabakAsadi94/PCNet/releases/download/v1.0/PCNet_Ductility.pth) – Predicts **Ductility**
 
-## Steps to Run Inference
+```markdown
+### 1️⃣ **Setup Environment**
 
-### 1️⃣ **Setup Environment**  
-First, install the required dependencies:  
+First, install the required dependencies:
 
 ```bash
 pip install torch torchvision timm pandas pillow pyyaml
-
+```
 
 ### 2️⃣ **Prepare Input Data**
 
@@ -41,3 +41,6 @@ Testing_images/
 ├── M2-B.png
 ├── M2-T.png
 ...
+```
+```
+
