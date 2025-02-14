@@ -1,7 +1,7 @@
 This repository provides a **Hybrid CNN-Transformer Model** to predict the **Strength** and **Ductility** of asphalt binders using fracture surface images. The models were trained as part of the research paper titled:
 
-> "Hybrid CNN-Transformer Model for Predicting Failure Properties of Asphalt Binder from Fracture Surface Images"  
-> *(Under review at the Journal of Computer-Aided Civil and Infrastructure Engineering)*
+> "Hybrid Deep Learning Model for Predicting Failure Properties of Asphalt Binder from Fracture Surface Images"  
+> *(In press at the Journal of Computer-Aided Civil and Infrastructure Engineering)*
 
 ## 🔍 Inference: Predicting Strength and Ductility
 
