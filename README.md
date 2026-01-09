@@ -67,7 +67,7 @@ If you use the models or code, please cite the following paper:
 
 ```bibtex
 @article{asadi2025hybrid,
-  title={Hybrid CNN-Transformer Model for Predicting Failure Properties of Asphalt Binder},
+  title={Hybrid Deep Learning Model for Predicting Failure Properties of Asphalt Binder},
   author={Asadi, Babak and Shah, Viraj and Vyas, Abhilash and Golparvar-Fard, Mani and Hajj, Ramez},
   journal={Computer-Aided Civil and Infrastructure Engineering},
   year={2025}
